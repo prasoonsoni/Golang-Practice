@@ -17,7 +17,25 @@
     - lexer does a lot of work
     - No semicolon
 
-Steps
+## Steps
 - Open folder in terminal
 - Run go mod init <name>
 - To run the file go run main.go
+
+
+## Types
+- Case insensitive; almost
+- Variable type should be known in advance
+- Everything is a Type
+- String
+- Bool
+- Integer
+    - unit8
+    - uint64
+    - int8
+    - int64
+    - uintptr
+- Floating
+    - float32
+    - float64
+- Complex
