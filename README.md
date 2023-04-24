@@ -16,3 +16,8 @@
     - No try/catch
     - lexer does a lot of work
     - No semicolon
+
+Steps
+- Open folder in terminal
+- Run go mod init <name>
+- To run the file go run main.go
