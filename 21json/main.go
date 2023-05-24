@@ -56,7 +56,7 @@ func DecodeJson() {
 	// some cases where you just want to add data to key value pair
 
 	var myUserData map[string]interface{}
-	json.Unmarshal(jsonData, &myUserData)
+	json.Unmarshal(jsonData, &myUserData) // Passing by reference so it is not copiedA
 	fmt.Println(myUserData)
 
 	for k, v := range myUserData {
