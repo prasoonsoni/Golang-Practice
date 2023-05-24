@@ -11,8 +11,8 @@ type User struct {
 }
 
 // Method
-func (user User) GetStatus() {
-	fmt.Println("Is User Active?", user.Status)
+func (user User) GetStatus() bool {
+	return user.Status
 }
 
 // when normally as "user User" this only passes the copy we have to pass by reference
@@ -27,7 +27,7 @@ func main() {
 
 	prasoon := User{"Prasoon", "me@prasoon.codes", true, 21}
 	fmt.Println(prasoon)
-	prasoon.GetStatus()
+	fmt.Println(prasoon.GetStatus())
 
 	// After changing email
 	prasoon.ChangeEmail("prason@gmail.com")
